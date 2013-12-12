@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+     <ImageView
+         android:id="@+id/bg"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:contentDescription="@string/imgdesc"
+         android:scaleType="fitXY"
+         android:src="@drawable/bg_main" />
+<com.cader.trace.Rectangle
+        android:id="@+id/rectangle1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp" />
+     <ScrollView
+         android:id="@+id/scrollView1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerInParent="true" >
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical" >
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal" >
+
+                 <ImageButton
+                     android:id="@+id/monkeybtn"
+                     style="@style/ib_tool"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:contentDescription="@string/imgdesc"
+                     
+                     android:src="@drawable/monkey_ic" />
+
+                 <ImageButton
+                     android:id="@+id/girafeebtn"
+                     style="@style/ib_tool"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:contentDescription="@string/imgdesc"
+                     android:src="@drawable/giraffe_ic" />
+
+                 <ImageButton
+                     android:id="@+id/elephantbtn"
+                     style="@style/ib_tool"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:contentDescription="@string/imgdesc"
+                     android:src="@drawable/elephant_ic" />
+
+                 <ImageButton
+                     android:id="@+id/lionbtn"
+                     style="@style/ib_tool"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:contentDescription="@string/imgdesc"
+                     android:src="@drawable/lion_ic" />
+
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal" >
+
+                 <ImageButton
+                     android:id="@+id/camelbtn"
+                     style="@style/ib_tool"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:contentDescription="@string/imgdesc"
+                     android:src="@drawable/camel_ic" />
+
+                 <ImageButton
+                     android:id="@+id/cowbtn"
+                     style="@style/ib_tool"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:contentDescription="@string/imgdesc"
+                     android:src="@drawable/cow_ic" />
+
+                 <ImageButton
+                     android:id="@+id/horsebtn"
+                     style="@style/ib_tool"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:contentDescription="@string/imgdesc"
+                     android:src="@drawable/horse_ic" />
+
+                 <ImageButton
+                     android:id="@+id/kangaroobtn"
+                     style="@style/ib_tool"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:contentDescription="@string/imgdesc"
+                     android:src="@drawable/kangaroo_ic" />
+
+             </LinearLayout>
+
+         </LinearLayout>
+     </ScrollView>
+      <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:text="TextView"
+        android:textColor="#F26F9C"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+ <com.google.ads.AdView
+        android:id="@+id/ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="a151ef7d6fb2d05"
+        ads:loadAdOnCreate="true"
+        android:gravity="center" >
+    </com.google.ads.AdView>
+</RelativeLayout>

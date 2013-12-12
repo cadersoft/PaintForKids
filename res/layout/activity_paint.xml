@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:id="@+id/relativelayout1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:gravity="right" >
+
+    <RelativeLayout
+        android:id="@+id/paint_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/scrollView1"
+        android:background="#fff" >
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#f26f9c" >
+
+        <LinearLayout
+            android:id="@+id/tool"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            
+     
+            
+           <Button
+                android:id="@+id/savebtn"
+                style="@style/paint_tool"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/save"
+                android:text="Save"
+                android:textColor="@android:color/white" />
+               
+
+            <Button
+                android:id="@+id/menubtn"
+                style="@style/paint_tool"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/mainmenu"
+                android:text="Menu"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/submenubtn"
+                style="@style/paint_tool"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/submenu"
+                android:text="Sub Menu"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/penbtn"
+                style="@style/paint_tool"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/pen"
+                android:text="Pen"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/colorbtn"
+                style="@style/paint_tool"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/color"
+                android:text="Color"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/undobtn"
+                style="@style/paint_tool"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/undo"
+                android:text="Undo"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/redobtn"
+                style="@style/paint_tool"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/redo"
+                android:text="Redo"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/deletebtn"
+                style="@style/paint_tool"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/delete"
+                android:text="Delete"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/prevbtn"
+                style="@style/paint_tool"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/prev"
+                android:text="Previous"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/nextbtn"
+                style="@style/paint_tool"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/next"
+                android:text="Next"
+                android:textColor="@android:color/white" />
+
+           
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/titleText"
+        style="@style/textShadow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="21dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColorLink="#ffffff" />
+
+    <com.google.ads.AdView
+        android:id="@+id/ad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/scrollView1"
+        ads:adSize="BANNER"
+        ads:adUnitId="a151ef7d6fb2d05"
+        ads:loadAdOnCreate="true"
+        android:gravity="center" >
+    </com.google.ads.AdView>
+
+</RelativeLayout>

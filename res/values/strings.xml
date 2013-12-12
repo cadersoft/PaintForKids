@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Paint for kids</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="exe1title">Paint</string>
+    <string name="exe2title">Animal</string>
+    <string name="exe3title">Transport</string>
+    <string name="exe4title">Vegetable</string>
+    <string name="imgdesc">Trace</string>
+    
+    <!-- 
+    <string name="str_tomoto">Tomato</string>
+    <string name="str_brinjal">Brinjal</string>
+    <string name="str_carrot">Carrot</string>
+    <string name="str_onion">Onion</string>
+    <string name="str_cucumber">Cucumber</string>
+    <string name="str_potato">Potato</string>
+    <string name="str_capsicum">Capsicum</string>
+    <string name="str_beetroot">Beetroot</string>
+    <string name="str_car">Car</string>
+    <string name="str_bus">Bus</string>
+    <string name="str_excavator">Excavator</string>
+    <string name="str_schoolbus">School Bus</string>
+    <string name="str_ambulance">Ambulance</string>
+    <string name="str_truck">Truck</string>
+    <string name="str_train">Train</string>
+    <string name="str_policecar">Police Car</string>
+    <string name="str_monkey">Monkey</string>
+    <string name="str_giraffe">Giraffe</string>
+    <string name="str_elephant">Elephant</string>
+    <string name="str_lion">Lion</string>
+    <string name="str_camel">Camel</string>
+    <string name="str_cow">Cow</string>
+    <string name="str_horse">Horse</string>
+    <string name="str_kangaroo">Kangaroo</string>
+     -->
+
+    <string-array name="planets_array">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+
+    <color name="pink">#fff26f9c</color>
+    <color name="blue">#ff1975e6</color>
+
+</resources>
